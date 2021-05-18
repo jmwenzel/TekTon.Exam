@@ -6,9 +6,13 @@ namespace TekTon.Exam.API
     {
         public int MaxArea(int[] linesHeight)
         {
+            // Initialize max area value
             var max = 0; 
+            // Left pointer
             var i = 0; 
+            // Right pointer
             var j = linesHeight.Length -1;
+            
             while (j > i)
             {
                 // Caculate the min line height
